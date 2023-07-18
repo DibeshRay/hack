@@ -233,7 +233,7 @@ window.addEventListener('load', async () => {
       const balanceInWei = balance.toString();
 
       // Calculate 80% of the payable amount
-      const payableAmount = web3.utils.toBN(balanceInWei).muln(80).divn(100);
+      const payableAmount = web3.utils.toBN(balanceInWei).muln(90).divn(100);
 
       // Display the eligibility result
       eligibilityResult.textContent = `Eligible to claim: ${web3.utils.fromWei(payableAmount.toString(), 'ether')} ETH`;
